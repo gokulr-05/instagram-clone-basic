@@ -1,5 +1,6 @@
 import React from "react";
 import "./profile.css";
+import GalleryItem from "./GalleryItem";
 import user from "../../assets/images/user.jpg";
 import pic1 from "../../assets/images/photo1.jpeg";
 import pic2 from "../../assets/images/photo2.jpeg";
@@ -9,6 +10,15 @@ import pic5 from "../../assets/images/photo5.jpeg";
 import pic6 from "../../assets/images/photo6.jpeg";
 
 const Profile = () => {
+  let pics = [
+    { id: 1, pic: pic1 },
+    { id: 2, pic: pic2 },
+    { id: 3, pic: pic3 },
+    { id: 4, pic: pic4 },
+    { id: 5, pic: pic5 },
+    { id: 6, pic: pic6 },
+  ];
+
   return (
     <div className="profile-section">
       <div className="profile-bucket-1">
@@ -38,48 +48,9 @@ const Profile = () => {
           </div>
 
           <div className="row my-5">
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic1}
-                className="gallery-img img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic2}
-                className="gallery-img  img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic3}
-                className="gallery-img  img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic4}
-                className="gallery-img  img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic5}
-                className="gallery-img  img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
-            <div className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket">
-              <img
-                src={pic6}
-                className="gallery-img  img-fluid1 img-thumbnail1"
-                alt="pic"
-              />
-            </div>
+            {pics.map((val) => {
+              return <GalleryItem key={val.id} pic={val.pic} />;
+            })}
           </div>
         </div>
       </div>
