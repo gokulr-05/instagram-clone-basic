@@ -1,0 +1,110 @@
+.profile-section {
+  margin-top: 50px;
+}
+
+.profile-bucket-1 {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.profile-bucket-2 {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.user-img {
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: 400;
+}
+
+.profile-bucket-3 {
+}
+
+.profile-data {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.gallery-img-bucket {
+  height: 10rem;
+}
+
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+
+/* media queries */
+
+/* Extra extra large	xxl	≥1400px */
+@media (min-width: 1400px) {
+  .profile-bucket-1 {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .profile-bucket-2 {
+    width: 82%;
+    margin: 0 auto;
+  }
+}
+
+/* Extra large	xl	≥1200px */
+/* @media (min-width: 1200px) and (max-width: 1399px) {
+    .header-container-1 {
+      width: 75%;
+      margin: 0 auto;
+    }
+  } */
+
+/* Large	lg	≥992px */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+    .header-container-1 {
+      width: 75%;
+      margin: 0 auto;
+    }
+  } */
+
+/* Medium	md	≥768px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .profile-bucket-1 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .profile-bucket-2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Small	sm	≥576px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .profile-bucket-1 {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .profile-bucket-2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* X-Small	None	<576px */
+@media (min-width: 0px) and (max-width: 575px) {
+  .profile-bucket-1 {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .profile-bucket-2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
