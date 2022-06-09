@@ -11,12 +11,12 @@ import pic6 from "../../assets/images/photo6.jpeg";
 
 const Profile = () => {
   let pics = [
-    { id: 1, pic: pic1 },
-    { id: 2, pic: pic2 },
-    { id: 3, pic: pic3 },
-    { id: 4, pic: pic4 },
-    { id: 5, pic: pic5 },
-    { id: 6, pic: pic6 },
+    { id: 1, pic: pic1, likes: 135, comments: 54 },
+    { id: 2, pic: pic2, likes: 43, comments: 22 },
+    { id: 3, pic: pic3, likes: 75, comments: 11 },
+    { id: 4, pic: pic4, likes: 67, comments: 98 },
+    { id: 5, pic: pic5, likes: 93, comments: 85 },
+    { id: 6, pic: pic6, likes: 32, comments: 17 },
   ];
 
   return (
@@ -49,7 +49,14 @@ const Profile = () => {
 
           <div className="row my-5">
             {pics.map((val) => {
-              return <GalleryItem key={val.id} pic={val.pic} />;
+              return (
+                <GalleryItem
+                  key={val.id}
+                  pic={val.pic}
+                  likes={val.likes}
+                  comments={val.comments}
+                />
+              );
             })}
           </div>
         </div>
