@@ -11,6 +11,7 @@ const CtxProvider = (props) => {
   let [showModal1, setShowModal1] = useState(false);
   let [showModalId1, setShowModalId1] = useState("");
   let val = {
+    username: "through_my_quirky_lens",
     showModalId: showModalId1,
     setShowModalId: (id) => {
       setShowModalId1(id);
@@ -26,7 +27,11 @@ const CtxProvider = (props) => {
         location: "Jungfrau, Switzerland",
         description:
           "what a casual ride on a swiss train. Thank you for the ride.",
-        liked: "guru and 69 others",
+        liked: (
+          <span>
+            <strong> guru</strong> and <strong>69 others</strong>
+          </span>
+        ),
         date: "May 15, 2020",
         week: "57w",
       },
@@ -35,7 +40,12 @@ const CtxProvider = (props) => {
         pic: pic2,
         location: "Assam,India",
         description: "Fantastic view point of the tower, Feels awesome",
-        liked: "karan and 46 others",
+        liked: (
+          <span>
+            {" "}
+            <strong> karan </strong>and <strong>46 others</strong>
+          </span>
+        ),
         date: "Jan 25, 2020",
         week: "59w",
       },
@@ -44,7 +54,11 @@ const CtxProvider = (props) => {
         pic: pic3,
         location: "Tamil Nadu, India",
         description: "Delicious Food on the door step with awesome climate.",
-        liked: "shaw and 67 others",
+        liked: (
+          <span>
+            <strong> shaw</strong> and <strong>25 others</strong>
+          </span>
+        ),
         date: "Jun 15, 2020",
         week: "56w",
       },
@@ -53,7 +67,11 @@ const CtxProvider = (props) => {
         pic: pic4,
         location: "Kerala, India",
         description: "Fantastic Match with the fantastic climate",
-        liked: "john and 89 others",
+        liked: (
+          <span>
+            <strong> john</strong> and <strong>99 others</strong>
+          </span>
+        ),
         date: "Jul 15, 2020",
         week: "56w",
       },
@@ -62,7 +80,11 @@ const CtxProvider = (props) => {
         pic: pic5,
         location: "Karnataka, India",
         description: "An amazing view of the nature feeling blessed",
-        liked: "messi and 27 others",
+        liked: (
+          <span>
+            <strong> messi</strong> and <strong>27 others</strong>
+          </span>
+        ),
         date: "Aug 8, 2020",
         week: "55w",
       },
@@ -72,7 +94,11 @@ const CtxProvider = (props) => {
         location: "Bihar, India",
         description:
           "journey under the shadow of the nature....no words to describe the beauty of the world",
-        liked: "akthar and 39 others",
+        liked: (
+          <span>
+            <strong> akthar</strong> and <strong>48 others</strong>
+          </span>
+        ),
         date: "Sep 10, 2020",
         week: "54w",
       },
