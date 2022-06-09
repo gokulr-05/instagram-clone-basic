@@ -1,20 +1,26 @@
 import React from "react";
 import "./galleryitem.css";
-import comment from "../../assets/images/comment.svg";
+import { useContext } from "react";
+import ctx from "../../store/context";
 
-const GalleryItem = ({ pic, likes, comments }) => {
-  let mouseOverHandler = (e) => {
-    console.log(likes);
+const GalleryItem = ({ pic, likes, comments, id }) => {
+  let ctx1 = useContext(ctx);
+
+  let onClickHandler = (id) => {
+    ctx1.setShowModalId(id);
+    ctx1.setShowModal(true);
   };
 
   return (
     <div
-      onMouseOver={mouseOverHandler}
       className="col-md-4 col-sm-4 col-4 mt-5 gallery-img-bucket "
+      onClick={() => {
+        onClickHandler(id);
+      }}
     >
       <div
         className="gallery-img-bucket-1"
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "100%", width: "100%", cursor: "pointer" }}
       >
         <div>
           <div className="overlay-text text-white">
@@ -24,7 +30,7 @@ const GalleryItem = ({ pic, likes, comments }) => {
                 <h5 className="m-0">{likes}</h5>
               </div>
               <div className="d-flex align-items-center gap-2">
-                <i class="fa-solid fa-comment"></i>
+                <i className="fa-solid fa-comment"></i>
                 <h5 className="m-0">{comments}</h5>
               </div>
             </div>
