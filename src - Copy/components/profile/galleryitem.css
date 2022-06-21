@@ -1,0 +1,31 @@
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-img-bucket-1 {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.475);
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+
+.overlay-text {
+  position: absolute;
+  z-index: 20;
+
+  top: 45%;
+  left: 30%;
+  opacity: 0;
+}
+
+.gallery-img-bucket-1:hover .overlay,
+.gallery-img-bucket-1:hover .overlay-text {
+  opacity: 1;
+}

@@ -10,7 +10,7 @@ function App() {
   let ctx1 = useContext(ctx);
   return (
     <div className="app">
-      {/* {ctx1.showModal && <Modal3 />} */}
+      {ctx1.showModal && <Modal3 />}
       <Header />
       <Profile />
     </div>

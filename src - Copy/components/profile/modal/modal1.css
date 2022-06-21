@@ -1,0 +1,19 @@
+.modal-sec {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+.modal-dialog-1 {
+  position: absolute;
+  left: 18%;
+}
+
+.modal-content-1 {
+  height: 600px;
+  width: 1000px;
+}
+
+.modal-body-1 {
+  height: 600px;
+  width: 1000px;
+}

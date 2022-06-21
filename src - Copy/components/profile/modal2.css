@@ -1,0 +1,19 @@
+.modal2-bucket-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: black; */
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: 3;
+}
